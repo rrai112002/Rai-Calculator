@@ -8,25 +8,45 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" class="display" disabled>
+        <p class="heading">Rai calculator</p>
+        <div class="display">
+        <input type="text" id="display" disabled>
+
+        </div>
         <div class="buttons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            <button>+</button>
-            <button class="clear">C</button>
+            <input class="button" type="button" value = "7" onclick="display.value += '7'">
+            <input class="button" type="button" value = "8" onclick="display.value += '8'">
+
+            <input class="button" type="button" value = "9" onclick="display.value += '9'">
+
+            <input class="button" type="button" value = "/" onclick="display.value += '/'">
+
+            <input class="button" type="button" value = "4" onclick="display.value += '4'">
+
+            <input class="button" type="button" value = "5" onclick="display.value += '5'">
+
+            <input class="button" type="button" value = "6" onclick="display.value += '6'">
+
+            <input class="button" type="button" value = "*" onclick="display.value += '*'">
+
+            <input class="button" type="button" value = "1" onclick="display.value += '1'">
+
+            <input class="button" type="button" value = "2" onclick="display.value += '2'">
+
+            <input class="button" type="button" value = "3" onclick="display.value += '3'">
+
+            <input class="button" type="button" value = "-" onclick="display.value += '-'">
+
+            <input class="button" type="button" value = "0" onclick="display.value += '0'">
+
+            <input class="button" type="button" value = "." onclick="display.value += '.'">
+
+            <input class="button" type="button" value = "=" onclick="display.value = eval(display.value)">
+
+            <input class="button" type="button" value = "+" onclick="display.value += '+'">
+
+            <input class="clear" type="button" value = "C" onclick="display.value = ''">
+
         </div>
     </div>
 </body>
